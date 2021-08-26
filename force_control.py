@@ -1,6 +1,6 @@
 import numpy as np
 
-from tiago_rl.envs import TIAGoTactileEnv
+from tiago_rl.envs import GripperTactileEnv
 from tiago_rl.misc import LoadCellVisualiser
 
 # Environment setup
@@ -11,7 +11,7 @@ force_type = 'raw'
 target_forces = np.array(2*[0.6])
 
 
-env = TIAGoTactileEnv(show_gui=show_gui, 
+env = GripperTactileEnv(show_gui=show_gui, 
                       force_type=force_type, 
                       target_forces=target_forces)
 
