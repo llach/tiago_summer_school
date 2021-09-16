@@ -12,6 +12,10 @@
 
 # Force Controller
 
+In this first task, the goal is to implement a controller that reaches and maintains a given (but variable) target force.
+As the robot is either position or velocity controlled, you need to think about how to transform force deltas into position deltas.
+A code skeleton can be found in `force_control.py`, where the TIAGo gripper performs a closing movement.
+
 
 ## Usage with Docker
 Using docker was only successfully tested on Linux (Ubuntu 18.04) so far. 
@@ -54,6 +58,10 @@ python force_control.py
 
 # Force Control with Reinforcement Learning
 
+You can also use the TIAGo simulation environments to train reinforcement learning algorithms to perform force control.
+We recommend using established and tested RL repositories for this, but you are not constrained to a particular project as the environments follow the widely accepted OpenAI gym conventions.
+In this example, we'll use stable-baselines3, but feel free to experiment with other projects as well.
+
 ## Manual Installation
 
 1. Follow install instructions of [tiago_rl](https://github.com/llach/tiago_rl)
@@ -65,7 +73,7 @@ pip install -U stable-baselines3
 ```
 git clone https://github.com/llach/tiago_summer_school && cd tiago_summer_school
 ```
-4. Run the scirpt
+4. Run the script
 ```
 python learn_control.py
 ```

@@ -8,12 +8,12 @@ from tiago_rl.misc import LoadCellVisualiser
 
 show_gui = True
 force_type = 'raw'
-target_forces = np.array(2*[0.6])
+target_forces = np.array(2*[0.2])
 
 
 env = GripperTactileEnv(show_gui=show_gui, 
-                      force_type=force_type, 
-                      target_forces=target_forces)
+                        force_type=force_type, 
+                        target_forces=target_forces)
 
 # Visualisation setup
 # ----------------------------
@@ -27,6 +27,7 @@ if show_gui:
 
 env.reset()
 for i in range(300):
+    # TODO do force control
     new_state = env.create_desired_state({
         'gripper_right_finger_joint': -0.2,
         'gripper_left_finger_joint': -0.2,
