@@ -75,7 +75,9 @@ python learn_control.py
 # FAQ
 
 **Q:** The fingers are sliding into the object. Is that normal?
+
 **A:** Yes. We have changed the object's stiffness to be lower than usual to simulate a deformable object. As a result, the fingers are allowed to penetrate the object.
 
 **Q:** How are TIAGo's fingers controlled?
+
 **A:** Each finger is controlled individually on the real robot and also in simulation. Their maximum position while being fully open is 0.045 (corresponding to centimeters from the gripper's center), and their closing position is at 0.0.
