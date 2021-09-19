@@ -12,6 +12,12 @@
   - [Manual Installation](#manual-installation-1)
 - [FAQ](#faq)
 
+Welcome to the force control tutorials with TIAGo of the NeuTouch Summer School. 
+In this README, you can find install instructions and task descriptions for the two tasks in this tutorial.
+Note that for the first task, you can choose between using docker or installing the TIAGo simulation manually.
+We recommend using the manual installation, as this is the only way to run the second exercise.
+
+
 # Force Controller
 
 
