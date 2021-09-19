@@ -29,6 +29,9 @@ here, you are free to use whichever RL algorithm or package you prefer.
 in case you don't know where to start, we recommend having a look at the examples from stable-baselines3:
 https://stable-baselines3.readthedocs.io/en/master/guide/examples.html
 
+you can find the calculation of different reward types here:
+https://github.com/llach/tiago_rl/blob/master/tiago_rl/envs/load_cell_tactile_env.py#L102
+
 generally, this script should:
 * create a model (make sure to use an algorithm that can handle continuous actions)
 * train the model
